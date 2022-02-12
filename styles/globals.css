@@ -2,8 +2,23 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  min-height: 100vh;
+  max-width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --pink-bg: #f72758;
+  --white-bg: rgb(236, 236, 236);
+  --orange-bg-text: #fd4b6a;
 }
 
 a {
